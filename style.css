@@ -306,7 +306,8 @@ form .btn2{
 .copyright i{
     color: #FF5757;
 }
-/* --------------CSS for small screen------------- */   
+
+/* ----------------------------------- CSS for small screen --------------------------------- */   
 nav .fa-solid{
     display: none;
 }
