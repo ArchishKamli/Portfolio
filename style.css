@@ -65,7 +65,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #FF5757;
 }
-/* --------------About-------------- */
+/* ----------------------------------------- ABOUT ------------------------------------------ */
 #about{
     padding: 80px 0;
     color: #ababab;
@@ -128,7 +128,7 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-/* -------------------services------------------- */
+/* ------------------------------------- SERVICES -------------------------------------- */
 #services{
     padding: 30px 0;
 }
@@ -166,7 +166,7 @@ nav ul li a:hover::after{
     background: #FF5757;
     transform: translateY(-10px);
 }
-/* ----------portfolio------------- */
+/* ------------------------------------------ PORTFOLIO ---------------------------------------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -241,7 +241,7 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #FF5757;
 }
-/* ------------contact------------ */
+/* ---------------------------------------- CONTACT ------------------------------------------- */
 .contact-left{
     flex-basis: 35%;
 }
