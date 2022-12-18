@@ -26,7 +26,7 @@
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text"> 
+        <div class="header-text">
           <p>UI/UX Designer</p>
           <h1>Hi, I'm <span>Archish</span><br />Kamli from India.</h1>
         </div>
@@ -52,8 +52,12 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
@@ -68,7 +72,9 @@
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>Talent Specialist</span><br />Collabera Inc., Vadodara, Gujarat - Mar 2022 - June 2022<br></li>
+                  <span>Talent Specialist</span><br />Collabera Inc., Vadodara,
+                  Gujarat - Mar 2022 - June 2022<br />
+                </li>
                 <li><span>Jun 2018 - Nov 2018</span><br />Jr. Exec. SCM</li>
               </ul>
             </div>
@@ -189,9 +195,18 @@
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>
@@ -199,10 +214,13 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright &#169; Archish. Made with <i class="fa-solid fa-heart"></i> by Archish Gallery</p>
+        <p>
+          Copyright &#169; Archish. Made with
+          <i class="fa-solid fa-heart"></i> by Archish Gallery
+        </p>
       </div>
     </div>
-<!-- ------------------- JavaScript ----------------- -->
+    <!-- ------------------- JavaScript ----------------- -->
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -220,36 +238,35 @@
     </script>
 
     <script>
-      var sidemenu = document.getElementById("sidemenu")
+      var sidemenu = document.getElementById("sidemenu");
 
-      function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
       }
-      function closemenu(){
+      function closemenu() {
         sidemenu.style.right = "-200px";
       }
-
     </script>
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwBmY7Swj3q1i_WaAgCe5StiauHFrCSjLO5AqoEGq6gtImY2nl4oxeBZFUSf4uJBFXz/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwBmY7Swj3q1i_WaAgCe5StiauHFrCSjLO5AqoEGq6gtImY2nl4oxeBZFUSf4uJBFXz/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message Sent Successfully"
-        setTimeout(function(){
-          msg.innerHTML = ""
-        }, 5000);
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+        // TODOs adfhiagjkagmajgo
+      });
+    </script>
   </body>
 </html>
